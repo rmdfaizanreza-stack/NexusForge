@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusForge - Free Gaming Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>NexusForge</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#games" class="nav-link">Games</a>
+                <a href="#categories" class="nav-link">Categories</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search games...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="nav-right">
+                <button class="download-btn">
+                    <i class="fas fa-download"></i> Downloads
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to NexusForge</h1>
+            <p>Discover and Download Free Games for Everyone</p>
+            <button class="cta-btn">Explore Games</button>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-gamepad"></i>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <h2>Browse by Category</h2>
+        <div class="category-grid">
+            <div class="category-card" data-category="action">
+                <i class="fas fa-explosion"></i>
+                <h3>Action</h3>
+                <p>12 Games</p>
+            </div>
+            <div class="category-card" data-category="puzzle">
+                <i class="fas fa-puzzle-piece"></i>
+                <h3>Puzzle</h3>
+                <p>8 Games</p>
+            </div>
+            <div class="category-card" data-category="adventure">
+                <i class="fas fa-map"></i>
+                <h3>Adventure</h3>
+                <p>15 Games</p>
+            </div>
+            <div class="category-card" data-category="strategy">
+                <i class="fas fa-chess"></i>
+                <h3>Strategy</h3>
+                <p>10 Games</p>
+            </div>
+            <div class="category-card" data-category="sports">
+                <i class="fas fa-football"></i>
+                <h3>Sports</h3>
+                <p>9 Games</p>
+            </div>
+            <div class="category-card" data-category="casual">
+                <i class="fas fa-heart"></i>
+                <h3>Casual</h3>
+                <p>20 Games</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section class="featured" id="games">
+        <h2>Featured Games</h2>
+        <div class="games-grid" id="gamesGrid">
+            <!-- Games will be loaded here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Game Detail Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="game-cover">
+                    <img id="modalGameImage" src="" alt="Game">
+                </div>
+                <div class="game-details">
+                    <h2 id="modalGameName"></h2>
+                    <div class="game-rating">
+                        <div class="stars" id="modalGameRating"></div>
+                        <span id="modalGameRatingText"></span>
+                    </div>
+                    <p class="game-category" id="modalGameCategory"></p>
+                    <p class="game-description" id="modalGameDescription"></p>
+                    
+                    <div class="game-info">
+                        <div class="info-item">
+                            <span>Developer:</span>
+                            <p id="modalGameDeveloper"></p>
+                        </div>
+                        <div class="info-item">
+                            <span>Platform:</span>
+                            <p id="modalGamePlatform"></p>
+                        </div>
+                        <div class="info-item">
+                            <span>Size:</span>
+                            <p id="modalGameSize"></p>
+                        </div>
+                        <div class="info-item">
+                            <span>Version:</span>
+                            <p id="modalGameVersion"></p>
+                        </div>
+                    </div>
+
+                    <button class="download-game-btn" id="downloadBtn">
+                        <i class="fas fa-download"></i> Download Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>NexusForge</h4>
+                <p>Your ultimate destination for free gaming</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NexusForge. All rights reserved. | Made by Faizan</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
